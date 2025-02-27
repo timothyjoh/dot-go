@@ -65,12 +65,20 @@ export const sites = [
     t: "ytm",
     u: "https://music.youtube.com/search?q={{{s}}}",
   },  {
-    c: "Multimedia",
+    c: "Online Services",
     d: "duckduckgo.com",
     r: 0,
     s: "DuckDuckGo",
     sc: "DuckDuckGo",
     t: "ddg",
     u: "http://duckduckgo.com/?q={{{s}}}",
+  },  {
+    c: "Online Services",
+    d: "presearch.com",
+    r: 0,
+    s: "Presearch",
+    sc: "Presearch",
+    t: "p",
+    u: "http://presearch.com/search?q={{{s}}}",
   },
 ]

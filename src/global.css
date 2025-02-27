@@ -1,15 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"); */
-
-/* Font fallback that closely matches Inter metrics */
-@font-face {
-  font-family: "Inter Fallback";
-  size-adjust: 107%;
-  ascent-override: 90%;
-  src: local("Arial");
-}
-
 :root {
   font-family:
+    "IBM Plex Sans",
     Inter,
     "Inter Fallback",
     system-ui,
@@ -27,6 +18,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --maize: #FCE762;
+  --raisin: #1A1423;
+  --walnut: #5E574D;
+  --grey: #7D6D61;
+  --blue: #9DCDC0;
 }
 
 * {
@@ -45,7 +41,8 @@ body {
   line-height: 1.5;
   font-weight: 400;
   font-size: 16px;
-  color: #1a1a1a;
+  color: var(--raisin);
+  background-color: var(--maize);
 }
 
 h1,
@@ -59,10 +56,10 @@ h6 {
 }
 
 a {
-  color: #444444;
+  color: var(--walnut);
 }
 a:hover {
-  color: #888888;
+  color: var(--grey);
 }
 
 button {
@@ -103,7 +100,7 @@ textarea {
 
 .copy-button {
   padding: 8px;
-  color: #666;
+  color: var(--grey);
   border-radius: 4px;
   transition: all 0.2s;
   display: flex;
@@ -125,7 +122,7 @@ textarea {
 }
 
 .copy-button.copied {
-  background: #28a745;
+  background: var(--blue);
 }
 
 /* Add footer styles */
@@ -136,15 +133,15 @@ textarea {
   right: 0;
   text-align: center;
   font-size: 14px;
-  color: #666;
+  color: var(--grey);
 }
 
 .footer a {
-  color: #666;
+  color: var(--grey);
   text-decoration: none;
   font-weight: 500;
 }
 
 .footer a:hover {
-  color: #333;
+  color: var(--walnut);
 }
