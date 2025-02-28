@@ -1,23 +1,10 @@
 :root {
-  font-family:
-    "IBM Plex Sans",
-    Inter,
-    "Inter Fallback",
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* https://coolors.co/fce762-a2e8dd-7d6d61-5e574d-1a1423 */
   --maize: #FCE762;
   --raisin: #1A1423;
   --walnut: #5E574D;
@@ -29,6 +16,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-optical-sizing: auto;
+  line-height: normal;
 }
 
 html,
@@ -51,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.2;
 }
 
@@ -63,7 +54,6 @@ a:hover {
 }
 
 button {
-  font: inherit;
   border: none;
   background: none;
   cursor: pointer;
@@ -92,7 +82,7 @@ textarea {
 /* Update url-input width to be 100% since container will control max width */
 .url-input {
   padding: 8px 12px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--grey);
   border-radius: 4px;
   width: 100%;
   background: #f5f5f5;
@@ -113,7 +103,7 @@ textarea {
 }
 
 .copy-button:active {
-  background: #e5e5e5;
+  background: var(--walnut);
 }
 
 .copy-button img {
