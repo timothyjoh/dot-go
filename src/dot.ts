@@ -73,6 +73,14 @@ export const sites = [
     t: "ddg",
     u: "http://duckduckgo.com/?q={{{s}}}",
   },  {
+    c: "Jira",
+    d: "jira.com",
+    r: 0,
+    s: "Jira",
+    sc: "Jira",
+    t: "j",
+    u: "https://spi-engineering.atlassian.net/browse/{{{s}}}",
+  },  {
     c: "Online Services",
     d: "presearch.com",
     r: 0,
